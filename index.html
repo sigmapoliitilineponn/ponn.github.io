@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valige NÄTS!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .main-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: shimmer 3s infinite;
+        }
+
+        .sub-text {
+            font-size: 2rem;
+            color: #C5A572;
+            margin-top: 1rem;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        @keyframes shimmer {
+            0% { color: #FFD700; }
+            50% { color: #C5A572; }
+            100% { color: #FFD700; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: 3rem;
+            }
+            .sub-text {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-text {
+                font-size: 2.5rem;
+            }
+            .sub-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-text">Valige NÄTS!</h1>
+        <p class="sub-text">Väikestel muudastuel on suur mõju!</p>
+    </div>
+</body>
+</html>
